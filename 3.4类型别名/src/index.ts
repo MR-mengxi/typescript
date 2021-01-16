@@ -65,3 +65,26 @@ tu = ["2", 3];
 // any类型
 let data: any = "angjs";
 let numb: number = data;
+
+
+// 类型别名
+type Gender = "男" | "女"
+type User = {
+    name: string
+    age: number
+    gender: Gender
+}
+
+let u: User;
+
+u = {
+    name: "abc",
+    age: 23,
+    gender: "男"
+}
+
+function getUsers(g: Gender): User[] {
+    return [];
+}
+
+getUsers("女");
