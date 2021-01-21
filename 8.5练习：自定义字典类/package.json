@@ -5,6 +5,6 @@
   },
   "scripts": {
     "dev": "nodemon --watch src -e ts --exec ts-node src/index.ts",
-    "build":"rd /s /q dist & tsc"
+    "build": "rd /s /q dist & tsc"
   }
 }
